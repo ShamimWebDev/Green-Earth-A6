@@ -1,4 +1,3 @@
-
 // 1.Category Loading Load Tree Categories dynamically on the left side.
 const categoryContainer = document.getElementById("categoryContainer");
 const plantsContainer = document.getElementById("plantsContainer");
@@ -26,9 +25,7 @@ const showCategory = (categories) => {
   });
 };
 
-
 // 2. Category Click → Tree Data On clicking a category: load trees of that category
-
 
 const loadPlantsByCategory = (categoryId) => {
   //   console.log(categoryId);
@@ -38,17 +35,16 @@ const loadPlantsByCategory = (categoryId) => {
       showPlantsByCategory(data.plants);
     })
     .catch((err) => {
-       showError()
+      showError();
     });
 };
 
 const showPlantsByCategory = (plants) => {
-    
-    if(plants.length === 0) {
-        showEmptyMessage()
-        // alert('No news found for this category!')
-       return 
-    }
+  if (plants.length === 0) {
+    showEmptyMessage();
+    // alert('No news found for this category!')
+    return;
+  }
   plantsContainer.innerHTML = "";
   plants.forEach((plants) => {
     plantsContainer.innerHTML += `
@@ -65,9 +61,18 @@ const showPlantsByCategory = (plants) => {
               <p>
                 ${plants.description}
               </p>
+                        <div class="flex justify-between items-center gap-4">
+                            <!-- Button -->
+                            <button class="bg-[#DCFCE7] text-[#15803D] rounded-full px-2 py-2">
+                                ${plants.category}
+                            </button>
+
+                            <!-- Price -->
+                            <p class="font-bold"> ৳ ${plants.price} </p>
+                        </div>
               <div class="card-actions">
-                <button class="btn bg-[#15803D] w-full text-white">
-                  Buy Now
+                <button class="btn bg-[#15803D] w-full text-white rounded-full">
+                  Add to Cart
                 </button>
               </div>
             </div>
@@ -75,7 +80,6 @@ const showPlantsByCategory = (plants) => {
         `;
   });
 };
-
 
 loadCategory();
 loadPlantsByCategory();

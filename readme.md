@@ -14,18 +14,18 @@ Ans: **map():** gives new updated array, **forEach():** is loop the element and 
 
 3. What are arrow functions in ES6?
 
-Ans:**arrow functions:**  in ES6 arrow functions is  short way of wring functions
+Ans: **arrow functions:**  in ES6 arrow functions is  short way of wring functions
 
 ---
 
 4. How does destructuring assignment work in ES6?
 
-Ans: **destructuring assignment:** separating the value from array and object
+Ans: **destructuring assignment:** separate the value from array and object
 
 ---
 
-5. Explain template literals in ES6. How are they different from string concatenation
+5. Explain template literals in ES6. How are they different from string concatenation?
 
-Ans: **template literals:** is template strings, which is more flexible and convenient way to create strings.
+Ans: **template literals:** is template strings, which is more flexible and convenient way to create strings using "`",and ${} we can add variables and expression, it is more easy than String concatenation.
 
 ---

@@ -1,36 +1,31 @@
 ## 5 Question Answered
 
-1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
+1.What is the difference between var, let, and const?
 
-Ans:- **getElementById:** search and select id from element.
-**getElementsByClassName:** select all element which have same class name.
-**querySelector:** select first element which match with css selector.
-**querySelectorAll:** select all element which match with css selector as node list.
+Ans:- Var: is old and has some problem, let: allow to change value Const: don't allow to change the value.
 
 ---
 
-2. How do you **create and insert a new element into the DOM**?
+2. What is the difference between map(), forEach(), and filter()?
 
-Ans: first will create a new element using(document.createElement"") and then will and text after that (document.parent.appendchild())
-
----
-
-3. What is **Event Bubbling** and how does it work?
-
-Ans: if any event happens like click it bubble from the inner child which is clicked child>parent>parent>parent.
+Ans: map(): gives new updated array, forEach(): is loop the element and don't return, filter(): gives array with condition. 
 
 ---
 
-4. What is **Event Delegation** in JavaScript? Why is it useful?
+3. What are arrow functions in ES6?
 
-Ans: Event Delegation is giving event in the parent element
-of child instant of giving separate event in multiple child element.
+Ans:arrow functions:  in ES6 arrow functions is  short way of wring functions
 
 ---
 
-5. What is the difference between **preventDefault() and stopPropagation()** methods?
+4. How does destructuring assignment work in ES6?
 
-Ans: **preventDefault():** it stops the default behavior
-**stopPropagation()** it stops the event bubbling.
+Ans: destructuring assignment: separating the value from array and object
+
+---
+
+5. Explain template literals in ES6. How are they different from string concatenation
+
+Ans: template literals: is template strings, which is more flexible and convenient way to create strings.
 
 ---

@@ -19,7 +19,7 @@ const showCategory = (categories) => {
   categories.forEach((cat) => {
     categoryContainer.innerHTML += `
       <li onclick="loadPlantsByCategory(${cat.id}, this)"
-          class="category-plants cursor-pointer hover:bg-[#15803D] rounded-sm px-2 py-1">
+          class="category-plants cursor-pointer md:hover:bg-[#15803D] sm:hover:bg-[#15803D] rounded-sm px-2 py-1">
         ${cat.category_name}
       </li>
     `;

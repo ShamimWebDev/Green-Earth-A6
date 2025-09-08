@@ -83,72 +83,34 @@
         <!-- Categories -->
         <div class="categories col-span-1 bg-white p-4 rounded shadow">
           <h3 class="text-lg font-semibold mb-3">Categories</h3>
-          <ul id="categoryContainer" class="  space-y-2">
-            <!-- <li class="cursor-pointer hover:text-[#15803D]">All Trees</li> -->
-            <!-- <li class="cursor-pointer hover:text-[#15803D]">Fruit Trees</li>
-            <li class="cursor-pointer hover:text-[#15803D]">Flowering Trees</li> -->
-          </ul>
+          <ul id="categoryContainer" class="space-y-2"></ul>
         </div>
 
-        <div id="plantsContainer"
+        <div
+          id="plantsContainer"
           class="trees grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 col-span-3"
-        >
-          <!-- Plants -->
-          
-
-          <!-- plants -->
-          <!-- <div class="card bg-base-100 shadow-sm w-full">
-            <figure>
-              <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                alt="Mango Tree"
-                class="w-full h-48 object-cover"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">Mango Tree</h2>
-              <p>
-                A card component has a figure, a body part, and inside body
-                there are title and actions parts
-              </p>
-              <div class="card-actions">
-                <button class="btn bg-[#15803D] w-full text-white">
-                  Buy Now
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="card bg-base-100 shadow-sm w-full">
-            <figure>
-              <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                alt="Mango Tree"
-                class="w-full h-48 object-cover"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">Mango Tree</h2>
-              <p>
-                A card component has a figure, a body part, and inside body
-                there are title and actions parts
-              </p>
-              <div class="card-actions">
-                <button class="btn bg-[#15803D] w-full text-white">
-                  Buy Now
-                </button>
-              </div>
-            </div>
-          </div> -->
-        </div>
+        ></div>
 
         <!-- Cart section -->
+
         <div class="cart col-span-1 bg-white p-4 rounded shadow">
           <h2 class="text-lg font-semibold mb-3">Your Cart</h2>
-          <p>items coming...</p>
+
+          <div id="cartContainer" class="space-y-2"></div>
+
+          <div
+            id="cartTotalDiv"
+            class="flex justify-end font-semibold"
+            style="display: none"
+          >
+            <span>Total:</span>
+            <span id="cartTotal">৳0</span>
+          </div>
+          <div id="cartContainer"></div>
         </div>
       </div>
-      <!-- About the Campaign section  -->
+
+      <!-- Campaign section  -->
       <div class="campaign py-10">
         <div class="campaign-header m-5">
           <h2 class="text-[#1F2937] text-2xl font-semibold text-center">
@@ -176,8 +138,6 @@
           </div>
         </div>
       </div>
-
-      <!-- About the Campaign section end  -->
     </main>
     <div class="impact bg-[#CFF0DC] py-15">
       <h2 class="text-[#1F2937] text-3xl py-5 px-5 text-center font-semibold">
@@ -226,7 +186,7 @@
               class="w-full p-3 rounded-md bg-white outline-none"
             />
 
-            <select class="w-full p-3 rounded-md bg-white outline-none ">
+            <select class="w-full p-3 rounded-md bg-white outline-none">
               <option>Number of Trees</option>
               <option>10</option>
               <option>20</option>
@@ -245,8 +205,7 @@
       </div>
     </div>
 
-
-     <!-- footer section. -->
+    <!-- footer section. -->
     <section class="bg-[#14532D]">
       <div class="footer-section w-full py-5">
         <p class="text-center text-[#FFFFFF] text-sm">
@@ -254,23 +213,18 @@
         </p>
       </div>
     </section>
-   <!-- plants modal section  -->
+    <!-- plants modal section  -->
     <dialog id="plants-details-modal" class="modal">
-  <div class="modal-box">
-
-    <div id="modalContainer">
-
-    </div>
-    <div class="modal-action">
-      <form method="dialog">
-        <!-- if there is a button in form, it will close the modal -->
-        <button class="btn">Close</button>
-      </form>
-    </div>
-  </div>
-</dialog>
-
-
+      <div class="modal-box">
+        <div id="modalContainer"></div>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
 
     <script src="./script.js"></script>
   </body>
